@@ -16,6 +16,7 @@
 | --- | --- | --- | --- |
 | kmounlp NER | 23964 | 10 | No |
 | Naver NER | 82393 | 14 | Yes |
+| [전문분야 말뭉치](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=110) | >=1.5M | 15 | No |
 
 ## Datasets
 
@@ -70,6 +71,9 @@ _	_	_	O
 다	다	EF	O
 .	.	SF	O
 ```
+
+- And 전문분야 말뭉치 also excludes 조사 from the tags
+- But only Koreans can apply for the dataset
 
 ## References
 
