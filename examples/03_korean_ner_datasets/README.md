@@ -1,24 +1,34 @@
-# Pre-trained models
+# NER datasets for Korean corpus
 
-## Overview
-
-| model | trained on |
-| --- | --- |
-| [monologg/KoELECTRA (GitHub)](https://github.com/monologg/KoELECTRA) | Naver NER |
-| [toriving/naver-nlp-challenge-2018 (GitHub)](https://github.com/toriving/naver-nlp-challenge-2018) | Naver NER |
-| [eagle705/pytorch-bert-crf-ner (GitHub)](https://github.com/eagle705/pytorch-bert-crf-ner) | kmounlp NER |
-| [monologg/KoBERT-NER (GitHub)](https://github.com/monologg/KoBERT-NER) | Naver NER |
-| [monologg/HanBert-Transformers (GitHub)](https://github.com/monologg/HanBert-Transformers) | Naver NER |
-| [monologg/DistilKoBERT (GitHub)](https://github.com/monologg/DistilKoBERT) | Naver NER |
-
+## Datasets
 
 | Dataset | #sentences | #tags | 조사 in tag |
 | --- | --- | --- | --- |
-| kmounlp NER | 23964 | 10 | No |
-| Naver NER | 82393 | 14 | Yes |
+| [kmounlp NER](https://github.com/kmounlp/NER) | 23964 | 10 | No |
+| [Naver NER](http://air.changwon.ac.kr/?page_id=10) | 82393 | 14 | Yes |
 | [전문분야 말뭉치](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=110) | >=1.5M | 15 | No |
 
-## Datasets
+## Tags
+
+| kmounlp NER | Naver NER | 전문분야 말뭉치 |
+| --- | --- | --- |
+| PER | PER | PS |
+| ORG | ORG | OG |
+| LOC | LOC | LC |
+| POH | DAT | DT |
+| DAT | TIM | TI |
+| TIM | FLD | TR |
+| DUR | AFW | FD |
+| MNY | CVL | AF |
+| PNT | NUM | CV |
+| NOH | EVT | QT |
+|  | ANM | EV |
+|  | PLT | AM |
+|  | MAT | PT |
+|  | TRM | MT |
+|  |  | TM |
+
+## Postposition
 
 - The Naver NER doesn't exclude 조사 (postposition) from the tags
 - E.g.,
@@ -36,7 +46,7 @@
 10	.	-
 ```
 
-- On the other hand, the kmounlp NER excludes 조사 from the tags
+- On the other hand, the kmounlp NER and 전문분야 말뭉치 excludes 조사 from the tags
 - E.g.,
 
 ``` txt
@@ -72,9 +82,9 @@ _	_	_	O
 .	.	SF	O
 ```
 
-- And 전문분야 말뭉치 also excludes 조사 from the tags
-- But only Koreans can apply for the dataset
+## Noun phrases
 
-## References
-
-1. https://nanum.etri.re.kr/share/aiacademy/nerdatasets?lang=ko_KR
+- Some named entities belong to noun phrases
+- E.g., `월드컵 결승전 EVT`
+- Naver NER represents them by using `B` and `I`
+- E.g., 월드컵 결승전 → `월드컵 EVT_B` and `결승전 EVT_I`
