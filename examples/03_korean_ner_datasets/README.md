@@ -5,12 +5,12 @@
 | Dataset | #sentences | #tags | 조사 in tag |
 | --- | --- | --- | --- |
 | [kmounlp NER](https://github.com/kmounlp/NER) | 23964 | 10 | No |
-| [Naver NER](http://air.changwon.ac.kr/?page_id=10) | 82393 | 14 | Yes |
+| [NAVER x Changwon NER](http://air.changwon.ac.kr/?page_id=10) | 82393 | 14 | Yes |
 | [전문분야 말뭉치](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=110) | >=1.5M | 15 | No |
 
 ## Tags
 
-| kmounlp NER | Naver NER | 전문분야 말뭉치 |
+| kmounlp NER | NAVER x Changwon NER | 전문분야 말뭉치 |
 | --- | --- | --- |
 | PER | PER | PS |
 | ORG | ORG | OG |
@@ -30,7 +30,7 @@
 
 ## Postposition
 
-- The Naver NER doesn't exclude 조사 (postposition) from the tags
+- The NAVER x Changwon NER doesn't exclude 조사 (postposition) from the tags
 - E.g.,
 
 ``` txt
@@ -86,5 +86,10 @@ _	_	_	O
 
 - Some named entities belong to noun phrases
 - E.g., `월드컵 결승전 EVT`
-- Naver NER represents them by using `B` and `I`
+- NAVER x Changwon NER represents them by using `B` and `I`
 - E.g., 월드컵 결승전 → `월드컵 EVT_B` and `결승전 EVT_I`
+
+## Korpora
+
+- [Korpora](https://ko-nlp.github.io/Korpora/) is a Python package which supports features to download and pre-process some open source Korean corpus datasets
+- It also supports the NAVER x Changwon NER
