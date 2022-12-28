@@ -1,2 +1,4 @@
 .ipynb_checkpoints
 mecab-ko-dic-*
+koelectra-base-v3-naver-ner
+KoelectraPipeline
