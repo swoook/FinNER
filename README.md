@@ -33,7 +33,7 @@
     docker run -itd --rm --shm-size=32G --gpus all \
     --entrypoint /bin/bash \
     -v /data/:/host_volume \
-    -p 7791:7791 \
+    -p 8888:8888 \
     --name FinNER \
     finner:dev
     ```
