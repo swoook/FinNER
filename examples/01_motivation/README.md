@@ -41,3 +41,7 @@
 ![Figure 5: A distribution of `품사` (Part-Of-Speech, POS) of the homonymous company names](./imgs/figure_05.png)
 
 ## TODO: Phrases
+
+## References
+
+1. [songys/entity (GitHub)](https://github.com/songys/entity)

@@ -28,6 +28,11 @@
 |  | TRM | MT |
 |  |  | TM |
 
+- Refer to the links below for more details:
+1. [NER Guideline (ver 1.0).pdf, pp.2-9 in kmounlp NER (GitHub)](https://github.com/kmounlp/NER/blob/1e557de738b8e6215c7cacac116e735518c0f680/NER%20Guideline%20(ver%201.0).pdf)
+2. [개체명인식 with Naver &#8211; 창원대 적응지능연구실](http://air.changwon.ac.kr/?page_id=10)
+3. [전문분야 말뭉치 설명서](https://aihub.or.kr/file/down.do?fileSn=7995&dataMnlFileSn=7995&dataSetSn=110)
+
 ## Postposition
 
 - The NAVER x Changwon NER doesn't exclude 조사 (postposition) from the tags
