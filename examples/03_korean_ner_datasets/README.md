@@ -7,6 +7,7 @@
 | [kmounlp NER](https://github.com/kmounlp/NER) | 23964 | 10 | No |
 | [NAVER x Changwon NER](http://air.changwon.ac.kr/?page_id=10) | 82393 | 14 | Yes |
 | [전문분야 말뭉치](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=110) | >=1.5M | 15 | No |
+| [국립국어원 개체명 분석 말뭉치 개체 연결 2021](https://corpus.korean.go.kr/) | --- | 15(150) | No |
 
 ## Tags
 

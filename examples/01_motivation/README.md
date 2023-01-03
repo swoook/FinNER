@@ -2,8 +2,9 @@
 
 ## TL;DR
 
-1. Some entities belong to homonyms
-2. Some entities which belong to phrases consist of the other named entities which are lower order units
+1. New entities are continuously being created
+2. Some entities belong to homonyms
+3. Some entities which belong to phrases consist of the other named entities which are lower order units
 
 ## Homonyms
 
