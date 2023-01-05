@@ -46,6 +46,29 @@
 - I measured the elapsed times of NER pipeline (NOT model) for the corpus `./example.txt` on NVIDIA TITAN RTX
 - I measured them only once, so it's likely to be inaccurate :(
 
+### Post-processing
+
+- The NER models from the monologg/KoELECTRA are trained on the NAVER x Changwon NER
+- Recall that the NAVER x Changwon NER doesn't exclude 조사 (postposition) from the tags:
+- E.g.,
+
+``` txt
+1	그런	-
+2	예산결산특별위원회의	ORG_B
+3	의도는	-
+4	요즘	-
+5	6연승을	NUM_B
+6	첫부분으로	-
+7	맞아	-
+8	떨어져가고	-
+9	있다	-
+10	.	-
+```
+
+- `의` is postposition, but it's included in the tag `예산결산특별위원회의	ORG_B`
+- So the models generally include postposition in named entities
+- with these model, We need to check whether a postposition exists in named entities
+
 ### Misc
 
 1. [monologg/KoELECTRA-Pipeline (GitHub)](https://github.com/monologg/KoELECTRA-Pipeline)
