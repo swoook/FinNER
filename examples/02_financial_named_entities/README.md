@@ -2,9 +2,9 @@
 
 ## Companies
 
-- One of the most essential finanfical named entities is the company name
+- One of the most important types of finanfical named entities is the company name
 - We can retreive a list of Korean company names by using [josw123/dart-fss (GitHub)](https://github.com/josw123/dart-fss)
-- It retreives the data from the [OPENDART](https://opendart.fss.or.kr) and [KIND](https://kind.krx.co.kr)
+- It retreives the list from the [OPENDART](https://opendart.fss.or.kr) and [KIND](https://kind.krx.co.kr)
 - Be aware we need to get a OPENDART API key from the OPENDART
 
 - [ ] TODO: Where can I get a list of foreign company names?

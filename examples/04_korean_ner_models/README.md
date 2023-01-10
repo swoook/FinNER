@@ -67,7 +67,8 @@
 
 - `의` is postposition, but it's included in the tag `예산결산특별위원회의	ORG_B`
 - So the models generally include postposition in named entities
-- with these model, We need to check whether a postposition exists in named entities
+- we need to check whether a postposition exists in named entities and remove it if needed
+- It seems we can address this issue by applying morpheme analysis packages such as mecab-ko
 
 ### Misc
 
